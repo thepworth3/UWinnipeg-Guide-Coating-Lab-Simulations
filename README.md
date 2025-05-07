@@ -13,5 +13,6 @@ This is a summary of the contents of this github repo, and how you could clone t
 ## Summary of Contents 
 
 
-### JPARC
-Picture of SolidWorks Model is included in folder. 
+### JPARC_Simulation_Model
+This folder contains the STL files used for 1m long DLC guide storage experiment simulations at the Japan Proton Accelerator Research Complex [(J-PARC)](https://j-parc.jp/c/en/). It also contains a picture of the model for reference. If you are interested in modify this model for a future TUCAN experiment at J-PARC, I can share the Solidworks Assembly. 
+
