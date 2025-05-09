@@ -1,0 +1,40 @@
+[MATERIALS]
+############### Define material properties for UCN #############
+# imaginary Fermi potential, diffuse reflectivity, spin flip probability, micro-roughness parameters
+# Diffuse reflection is either modeled with the Lambert model or the Micro Roughness model.
+# To activate the former, set the LamberReflectionProbability. To activate the latter, set RMSroughness and CorrelationLength.
+# For reference see
+# https://www.ncnr.nist.gov/resources/n-lengths/
+# https://doi.org/10.1007/BF01380066 
+# https://doi.org/10.1140/epja/i2010-10926-x
+#
+#name		FermiReal [neV]		FermiImag [neV]		LambertProbability [0..1]	SpinflipProbability [0..1]	RMSroughness [m]	CorrelationLength [m]
+default		0			0			0				0			0			0
+DLC		269			0.0625			0  				2e-6	0	0 	 
+DLC_01		269			0.01			0.03  				2e-6	0	0	
+DLC_02		269			0.02			0.03  				2e-6    0	0 
+DLC_03		269			0.03			0.03  				2e-6	0	0
+DLC_04		269			0.04			0.03  				2e-6	0	0
+DLC_05		269			0.05			0.03  				2e-6	0	0
+DLC_06		269			0.06			0.03  				2e-6	0	0
+DLC_07		269			0.07			0.03  				2e-6	0	0
+DLC_08		269			0.08			0.03  				2e-6    0	0
+DLC_09		269			0.09			0.03  				2e-6	0	0
+DLC_10		269			0.10			0.03  				2e-6	0	0
+UCNdet		0			0.1			0				0	0	0
+He3		0.0005	1.20e-4	0	0	0	0	# 9.5 torr - nominal 3He partial pressure in Dunia-10
+LHePerf		18.7854			0			0.16				0	0	0	#Perfect Liquid Helium, no absorbtion or upscattering
+BeO		256.6665		6.23e-2			0.16				0	0	0
+SS		183.0405		8.52e-2			0.16				0	0	0
+dPE    		 209              	0.06           		0.16            		1e-5	0	0
+dPS     	161             	0.047          		0.16             		1e-5	0	0
+
+
+
+
+
+
+
+
+
+
