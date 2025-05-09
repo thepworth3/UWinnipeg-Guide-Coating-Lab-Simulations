@@ -26,7 +26,7 @@ This folder contains the STL files for a benchmarking model used for analytical 
 This folder contains all of the scripts I used in my workflow to run the simple benchmarking simulations. If you are goign to run these yourself, you must change the directory stucture in these files to match what you are using on your computecanada account, recalling that data and ouput files should be stored in your scratch folder, and you cannot submit jobs from your home directory. You can use your login node in some cases, put is is best practice to submit things from your project directory. The baseline stucture for this would be /project/6006407/your_username
 
 
-## Important Scripts Present for all of my simulation workflow
+## Important scripts present for all of my simulation workflows
 I use a series of scripts to generate my simulations based on desired input paramters for the simulation. While being tailored to each category of simulation I run (benchmarking, J-PARC, TRIUMF, etc.) each script has the same defined role in each workflow.
 
 
