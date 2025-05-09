@@ -33,9 +33,10 @@ I use a series of scripts to generate my simulations based on desired input para
 ### config_template.in
 This file defines the baseline of the kind of simulation you want to run. Lines or segments of code that you want to swap out for different options are defined as commands that can be identified by the other scripts written in Perl. For example, if you wanted to run a simulation with different imaginary optical potentials for DLC, you may specify the material not as DLC, but as 
 
-'
+"""
 DLC_#PARAMDLCW
-'
+"""
+The other scripts will see this, and swap out PARAMDLCW for each entry in the PARAMDLCW column in input.csv, where each row is a seperate simulation.
 
 
 See the [PENTrack Github](https://github.com/wschreyer/PENTrack/tree/master) for more info about configuration files and how to best use them. 
