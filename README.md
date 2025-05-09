@@ -36,16 +36,22 @@ This file defines the baseline of the kind of simulation you want to run. Lines 
 ```
 DLC_#PARAMDLCW
 ```
-The other scripts will see this, and swap out PARAMDLCW for each entry in the PARAMDLCW column in input.csv, where each row is a seperate simulation.
+The other scripts will see this, and swap out PARAMDLCW for each entry in the PARAMDLCW column in input.csv, where each row is a seperate simulation. You may be doing this for many different parameters in a given simulation.
 
 
 See the [PENTrack Github](https://github.com/wschreyer/PENTrack/tree/master) for more info about configuration files and how to best use them. 
 
+#### Note
+It is important that if you are to use my templates, you update the scripts to match the directory that you are drawing the 3D model files, and materials.in file from, otherwise you will encounter many errors.
+
 
 ### batch_template.in 
-
-
-### configgen.sh
+This script is used to submit each job to computecanada. It is important that if you are to use my templates, you update the script to reflect the directory which you have installed PENTrack, and where you are storing your template files and scripts for a given simulation.
 
 
 ### input.csv
+This file defines paramters that you want to swap out for a given simulation study that you are conducting, for example, varying the imaginary fermi potential of DLC. Each column determines a parameter. For any simulation study, you must define a simulation ID (SUID), and JOB_FIRST and JOB_LAST (how many times you want to run each simulation: to run one simulation for each paramter set then set each to be 1). Then, you must have a column for each paramter you want to define per simulation. You may want to vary the Fermi potential of superfluid helium, as well as a valve opening time for some kind of source valve for example. Each must be defined in this file. The column header must correspond to the entry in your configtemplate.in file, and the configgen.sh script.
+
+
+### configgen.sh
+This script uses the above described files to tie everything together. It reads input.csv, and creates a configuration file and batch file for each row (parameter set). It also creates data storage directories. **The directory structures in this file are incredibly important to pay attention to**.   
