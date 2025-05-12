@@ -55,3 +55,8 @@ This file defines paramters that you want to swap out for a given simulation stu
 
 ### configgen.sh
 This script uses the above described files to tie everything together. It reads input.csv, and creates a configuration file and batch file for each row (parameter set). It also creates data storage directories. **The directory structures in this file are incredibly important to pay attention to**.   
+
+
+### Neutron Movie Maker
+This is a great tool created by K. Drury that can be used to see what is going on in simulations, to help with debugging, or understanding what is going on. 
+
