@@ -58,5 +58,5 @@ This script uses the above described files to tie everything together. It reads 
 
 
 ### Neutron Movie Maker
-This is a great tool created by K. Drury that can be used to see what is going on in simulations, to help with debugging, or understanding what is going on. 
+This is a great tool created by K. Drury that can be used to see what is going on in simulations, to help with debugging, or understanding what is going on. See the code for documentation.
 
